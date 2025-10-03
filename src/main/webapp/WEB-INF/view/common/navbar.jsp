@@ -1,9 +1,11 @@
-<%-- File: /WEB-INF/view/common/navbar.jsp --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%-- No DOCTYPE, html, head or body tags, just the navbar component --%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <!-- Link to Font Awesome for icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Link to Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
 <!-- Link to our custom CSS file -->
 <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/navbar.css">
 
@@ -17,7 +19,11 @@
     </div>
 
     <div class="menu-toggle">
-      <i class="fas fa-bars"></i>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
 
     <div class="nav-menu">
@@ -28,23 +34,62 @@
       </ul>
 
       <div class="auth-buttons">
-        <a href="${pageContext.request.contextPath}/login" class="login-btn">Login</a>
-        <a href="${pageContext.request.contextPath}/register" class="register-btn">Register</a>
+        <c:choose>
+          <c:when test="${not empty sessionScope.user}">
+            <div class="profile-section">
+              <a href="${pageContext.request.contextPath}/bookings" class="booking-btn">
+                <i class="fas fa-calendar-alt mr-2"></i>
+                <span>Bookings</span>
+              </a>
+
+              <div class="profile-dropdown">
+                <div class="profile-icon" id="profileIcon">
+                  <i class="fas fa-user"></i>
+                </div>
+
+                <div class="dropdown-menu" id="dropdownMenu">
+                  <a href="${pageContext.request.contextPath}/profile">
+                    <i class="fas fa-user dropdown-icon"></i>
+                    <span>Profile</span>
+                  </a>
+                  <a href="${pageContext.request.contextPath}/settings">
+                    <i class="fas fa-cog dropdown-icon"></i>
+                    <span>Settings</span>
+                  </a>
+                  <a href="${pageContext.request.contextPath}/logout">
+                    <i class="fas fa-sign-out-alt dropdown-icon"></i>
+                    <span>Logout</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </c:when>
+          <c:otherwise>
+            <a href="${pageContext.request.contextPath}/login" class="login-btn">Login</a>
+            <a href="${pageContext.request.contextPath}/register" class="register-btn">Register</a>
+          </c:otherwise>
+        </c:choose>
       </div>
     </div>
   </div>
 </nav>
 
-
 <script>
   document.addEventListener('DOMContentLoaded', function() {
+    // Navbar entrance animation
+    const navbar = document.querySelector('.navbar');
+    setTimeout(() => {
+      navbar.classList.add('loaded');
+    }, 100);
+
     // Mobile menu toggle
     const menuToggle = document.querySelector('.menu-toggle');
     const navMenu = document.querySelector('.nav-menu');
+    const hamburger = document.querySelector('.hamburger');
 
     menuToggle.addEventListener('click', function() {
       navMenu.classList.toggle('active');
-      menuToggle.classList.toggle('active');
+      hamburger.classList.toggle('active');
     });
 
     // Highlight active nav link based on current page
@@ -53,14 +98,13 @@
 
     navLinks.forEach(link => {
       const linkPath = link.getAttribute('href');
-      if (currentLocation.includes(linkPath) && linkPath !== '/') {
+      if (currentLocation.includes(linkPath) && linkPath !== '${pageContext.request.contextPath}/') {
         link.classList.add('active');
       }
     });
 
     // Add scroll effect
     window.addEventListener('scroll', function() {
-      const navbar = document.querySelector('.navbar');
       if (window.scrollY > 50) {
         navbar.classList.add('scrolled');
       } else {
@@ -68,7 +112,24 @@
       }
     });
 
+    // Profile dropdown toggle
+    const profileIcon = document.getElementById('profileIcon');
+    const dropdownMenu = document.getElementById('dropdownMenu');
 
-    document.querySelector('.navbar').classList.add('loaded');
+    if (profileIcon) {
+      profileIcon.addEventListener('click', function(event) {
+        dropdownMenu.classList.toggle('active');
+        event.stopPropagation();
+      });
+    }
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(event) {
+      if (dropdownMenu && dropdownMenu.classList.contains('active')) {
+        if (!event.target.closest('.profile-dropdown')) {
+          dropdownMenu.classList.remove('active');
+        }
+      }
+    });
   });
 </script>

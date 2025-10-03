@@ -16,7 +16,7 @@
         <h2>You're renting:</h2>
         <img src="${vehicle.image}" alt="${vehicle.brand} ${vehicle.model}">
         <h3>${vehicle.brand} ${vehicle.model}</h3>
-        <p>Price per day: <span>NRs ${vehicle.pricePerDay}</span></p>
+        <p>Price per day: <span>Rs ${vehicle.pricePerDay}</span></p>
         <p>Current status: <span>${vehicle.status}</span></p>
     </div>
 

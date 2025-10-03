@@ -50,7 +50,7 @@ public class BookingServlet extends HttpServlet {
             System.out.println("[DEBUG] Number of rental days: " + days);
 
             double total = vehicle.getPricePerDay() * days;
-            System.out.println("[DEBUG] Total rental cost: NRs " + total);
+            System.out.println("[DEBUG] Total rental cost: Rs " + total);
 
             int reduceQuantity = 1;
             boolean isReduced = vehicleDAO.reduceVehicleQuantity(vehicleId, reduceQuantity);

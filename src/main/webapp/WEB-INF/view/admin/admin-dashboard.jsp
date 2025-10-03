@@ -63,7 +63,7 @@
           <div class="stat-card-inner">
             <div class="stat-content">
               <h6>Revenue</h6>
-              <h2>NRs<fmt:formatNumber value="${totalRevenue}" maxFractionDigits="2"/></h2>
+              <h2>Rs<fmt:formatNumber value="${totalRevenue}" maxFractionDigits="2"/></h2>
             </div>
             <div class="stat-icon">
               <i class="bi bi-cash-coin"></i>
@@ -102,7 +102,7 @@
                     </td>
                     <td>${booking.startDate}</td>
                     <td>${booking.endDate}</td>
-                    <td>NRs. <fmt:formatNumber value="${booking.totalAmount}" type="number" /></td>
+                    <td>Rs. <fmt:formatNumber value="${booking.totalAmount}" type="number" /></td>
                     <td>${booking.userId}</td>
                     <td>
                       <c:forEach var="vehicle" items="${booking.vehicles}">
@@ -138,7 +138,7 @@
                 <tr>
                   <td><span class="payment-id">${payment.paymentId}</span></td>
                   <td><span class="customer-name">${payment.customerName}</span></td>
-                  <td><span class="payment-amount">NRs<fmt:formatNumber value="${payment.amount}" maxFractionDigits="2"/></span></td>
+                  <td><span class="payment-amount">Rs<fmt:formatNumber value="${payment.amount}" maxFractionDigits="2"/></span></td>
                   <td>
                     <fmt:formatDate value="${payment.bookingStartDate}" pattern="MMM dd"/> -
                     <fmt:formatDate value="${payment.bookingEndDate}" pattern="MMM dd, yyyy"/>

@@ -72,7 +72,7 @@
                         <td>${vehicle.vehicleId}</td>
                         <td>${vehicle.brand}</td>
                         <td>${vehicle.model}</td>
-                        <td><span class="price">NRs ${vehicle.pricePerDay}</span>/day</td>
+                        <td><span class="price">Rs ${vehicle.pricePerDay}</span>/day</td>
                         <td>${vehicle.quantity}</td>
                         <td>
                             <span class="status-badge status-${vehicle.status.toLowerCase()}">${vehicle.status}</span>

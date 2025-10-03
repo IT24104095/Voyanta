@@ -26,7 +26,7 @@
 
         <div class="detail-row">
           <p><strong>Price Breakdown:</strong></p>
-          <p>NRs${vehicle.pricePerDay} × ${days} days = <span class="total-price">NRs${total}</span></p>
+          <p>Rs${vehicle.pricePerDay} × ${days} days = <span class="total-price">Rs${total}</span></p>
         </div>
       </div>
     </div>

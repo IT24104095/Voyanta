@@ -101,7 +101,7 @@
                             <fmt:formatDate value="${booking.startDate}" pattern="MMM dd"/> to
                             <fmt:formatDate value="${booking.endDate}" pattern="MMM dd, yyyy"/>
                         </td>
-                        <td><span class="price">NRs <fmt:formatNumber value="${booking.totalAmount}" maxFractionDigits="2"/></span></td>
+                        <td><span class="price">Rs <fmt:formatNumber value="${booking.totalAmount}" maxFractionDigits="2"/></span></td>
                         <td><span class="status-badge status-${fn:toLowerCase(booking.status)}">${booking.status}</span></td>
                         <td>
                             <button class="action-btn edit-btn"

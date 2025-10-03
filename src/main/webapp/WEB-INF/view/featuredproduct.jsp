@@ -21,7 +21,7 @@
                 <div class="vehicle-details">
                     <h3 class="vehicle-brand">${vehicle.brand}</h3>
                     <p class="vehicle-model">${vehicle.model}</p>
-                    <p class="vehicle-price">NRs ${vehicle.pricePerDay} / day</p>
+                    <p class="vehicle-price">Rs ${vehicle.pricePerDay} / day</p>
 
                     <!-- Status Display -->
                     <span id="status-${vehicle.vehicleId}"

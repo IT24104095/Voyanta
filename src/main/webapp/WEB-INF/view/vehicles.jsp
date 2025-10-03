@@ -51,7 +51,7 @@
                     <div class="vehicle-details">
                         <h3 class="vehicle-brand">${vehicle.brand}</h3>
                         <p class="vehicle-model">${vehicle.model}</p>
-                        <p class="vehicle-price">NRs${vehicle.pricePerDay} / day</p>
+                        <p class="vehicle-price">Rs${vehicle.pricePerDay} / day</p>
                         <span id="status-${vehicle.vehicleId}" class="vehicle-status ${vehicle.status == 'Available' ? 'status-available' : vehicle.status == 'Rented' ? 'status-rented' : 'status-maintenance'}">
                                 ${vehicle.status}
                         </span>

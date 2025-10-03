@@ -14,8 +14,8 @@
 <%--&lt;%&ndash;&lt;%&ndash;<p>Start Date: <%= startDate %></p>&ndash;%&gt;&ndash;%&gt;--%>
 <%--&lt;%&ndash;&lt;%&ndash;<p>End Date: <%= endDate %></p>&ndash;%&gt;&ndash;%&gt;--%>
 <%--&lt;%&ndash;&lt;%&ndash;<p>Days: <%= daysBetween %></p>&ndash;%&gt;&ndash;%&gt;--%>
-<%--&lt;%&ndash;&lt;%&ndash;<p>Price Per Day: NRs <%= vehicle.getPricePerDay() %></p>&ndash;%&gt;&ndash;%&gt;--%>
-<%--&lt;%&ndash;&lt;%&ndash;<h3>Total Amount: NRs <%= totalAmount %></h3>&ndash;%&gt;&ndash;%&gt;--%>
+<%--&lt;%&ndash;&lt;%&ndash;<p>Price Per Day: Rs <%= vehicle.getPricePerDay() %></p>&ndash;%&gt;&ndash;%&gt;--%>
+<%--&lt;%&ndash;&lt;%&ndash;<h3>Total Amount: Rs <%= totalAmount %></h3>&ndash;%&gt;&ndash;%&gt;--%>
 
 <%--&lt;%&ndash;&lt;%&ndash;<form action="BookingServlet" method="post">&ndash;%&gt;&ndash;%&gt;--%>
 <%--&lt;%&ndash;&lt;%&ndash;  <input type="hidden" name="vehicleId" value="<%= vehicle.getVehicleId() %>">&ndash;%&gt;&ndash;%&gt;--%>
@@ -62,8 +62,8 @@
 <%--            <span class="detail-icon"><i class="fas fa-money-bill-wave"></i></span>--%>
 <%--            <div class="detail-content">--%>
 <%--              <h3>Price Breakdown</h3>--%>
-<%--              <p>NRs ${vehicle.pricePerDay} × ${days} days</p>--%>
-<%--              <p class="total-price">Total: NRs ${total}</p>--%>
+<%--              <p>Rs ${vehicle.pricePerDay} × ${days} days</p>--%>
+<%--              <p class="total-price">Total: Rs ${total}</p>--%>
 <%--            </div>--%>
 <%--          </div>--%>
 <%--        </div>--%>

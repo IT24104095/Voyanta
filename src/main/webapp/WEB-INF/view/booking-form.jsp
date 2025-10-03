@@ -11,7 +11,7 @@
 <%--<!-- Display vehicle details that were sent from the form -->--%>
 <%--<p>Vehicle Brand: ${param.vehicleBrand}</p>--%>
 <%--<p>Vehicle Model: ${param.vehicleModel}</p>--%>
-<%--<p>Price per Day: NRs ${param.pricePerDay}</p>--%>
+<%--<p>Price per Day: Rs ${param.pricePerDay}</p>--%>
 
 <%--<form action="payments" method="post">--%>
 <%--  <div>--%>

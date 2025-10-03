@@ -29,7 +29,7 @@
                 <div class="summary-card-inner">
                     <div class="summary-content">
                         <h6>Total Revenue</h6>
-                        <h2>NRs<fmt:formatNumber value="${totalRevenue}" maxFractionDigits="2"/></h2>
+                        <h2>Rs<fmt:formatNumber value="${totalRevenue}" maxFractionDigits="2"/></h2>
                     </div>
                     <div class="summary-icon">
                         <i class="bi bi-cash-coin"></i>
@@ -113,7 +113,7 @@
                     <tr>
                         <td><span class="payment-id">${payment.paymentId}</span></td>
                         <td><span class="customer-name">${payment.customerName}</span></td>
-                        <td><span class="payment-amount">NRs<fmt:formatNumber value="${payment.amount}" maxFractionDigits="2"/></span></td>
+                        <td><span class="payment-amount">Rs<fmt:formatNumber value="${payment.amount}" maxFractionDigits="2"/></span></td>
                         <td>${payment.method}</td>
                         <td>
                             <fmt:formatDate value="${payment.bookingStartDate}" pattern="MMM dd"/> -

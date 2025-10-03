@@ -21,7 +21,7 @@
                         <div class="quote-icon">
                             <i class="fas fa-quote-left"></i>
                         </div>
-                        <p class="testimonial-text">The rental process was incredibly smooth from start to finish. The car was in perfect condition, and the staff was friendly and professional. I'll definitely be using GoRental for all my future trips!</p>
+                        <p class="testimonial-text">The rental process was incredibly smooth from start to finish. The car was in perfect condition, and the staff was friendly and professional. I'll definitely be using Voyanta for all my future trips!</p>
                         <div class="rating">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -73,7 +73,7 @@
                         <div class="quote-icon">
                             <i class="fas fa-quote-left"></i>
                         </div>
-                        <p class="testimonial-text">As someone who travels frequently for work, I've used many rental services, but GoRental stands out. Their customer service is exceptional, and they always have the perfect vehicle for my needs.</p>
+                        <p class="testimonial-text">As someone who travels frequently for work, I've used many rental services, but Voyanta stands out. Their customer service is exceptional, and they always have the perfect vehicle for my needs.</p>
                         <div class="rating">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -112,7 +112,7 @@
 <!-- Why Choose Us Section -->
 <section class="benefits-section">
     <div class="container">
-        <h1>Why Choose GoRental</h1>
+        <h1>Why Choose Voyanta?</h1>
         <p class="subtitle">We're committed to providing exceptional service and value with every rental. Here's what sets us apart.</p>
 
         <div class="benefits-grid">
@@ -172,7 +172,7 @@
         </div>
 
         <div class="cta-container">
-            <p>Ready to experience the GoRental difference?</p>
+            <p>Ready to experience the Voyanta difference?</p>
             <a href="${pageContext.request.contextPath}/vehicles" class="btn btn-primary">Browse Our Fleet <i class="fas fa-arrow-right"></i></a>
         </div>
     </div>

@@ -51,7 +51,7 @@ public class SendMessageServlet extends HttpServlet {
                 + "We have received your message regarding \"" + inquiryType + "\".\n"
                 + "Our team will get back to you as soon as possible.\n\n"
                 + "Your Message:\n" + message + "\n\n"
-                + "Best regards,\nGoRent";
+                + "Best regards,\nVoyanta";
 
         try {
             // Debug email sending

@@ -34,7 +34,7 @@
         <i class="fas fa-arrow-right"></i>
       </a>
       <a href="${pageContext.request.contextPath}/register" class="btn btn-secondary">
-        <span>Join GoRental</span>
+        <span>Join Voyanta</span>
       </a>
     </div>
 

@@ -9,7 +9,7 @@
     <div class="logo-container">
       <a href="${pageContext.request.contextPath}/" class="logo">
         <i class="fas fa-car-side"></i>
-        <span class="logo-text">GoRent</span>
+        <span class="logo-text">Voyanta</span>
       </a>
     </div>
 

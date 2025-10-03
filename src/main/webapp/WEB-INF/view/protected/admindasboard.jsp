@@ -8,7 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GoRent Admin Dashboard</title>
+    <title>Voyanta Admin Dashboard</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/admin.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -18,7 +18,7 @@
     <!-- Sidebar -->
     <div class="sidebar">
         <div class="logo">
-            <h2>GoRent Admin</h2>
+            <h2>Voyanta Admin</h2>
         </div>
         <ul class="nav-links">
             <li class="active">
@@ -761,11 +761,11 @@
                     <form action="#" method="post">
                         <div class="form-group">
                             <label for="site_name">Site Name:</label>
-                            <input type="text" id="site_name" name="site_name" value="GoRent Vehicle Rental">
+                            <input type="text" id="site_name" name="site_name" value="Voyanta Vehicle Rental">
                         </div>
                         <div class="form-group">
                             <label for="admin_email">Admin Email:</label>
-                            <input type="email" id="admin_email" name="admin_email" value="admin@gorent.com">
+                            <input type="email" id="admin_email" name="admin_email" value="admin@voyanta.com">
                         </div>
                         <div class="form-group">
                             <label for="currency">Currency:</label>

@@ -31,7 +31,7 @@
 
         <section class="story-section">
             <h2>Our Story</h2>
-            <p>Founded in 2010, our car rental service began with a small fleet of just 5 vehicles. Today, we've grown to become one of the leading car rental providers in the region with over 100 vehicles and multiple locations.</p>
+            <p>Founded in 2025, our car rental service began with a small fleet of just 5 vehicles. Today, we've grown to become one of the leading car rental providers in the region with over 100 vehicles and multiple locations.</p>
 
             <div class="story-content">
                 <div class="story-image">
@@ -79,100 +79,6 @@
     </div>
 </section>
 <div class="container">
-    <!-- Team Section -->
-    <section class="team-section">
-        <h1 class="section-title">Our Team</h1>
-        <div class="underline"></div>
-        <p class="section-description">Meet the dedicated professionals who lead our company and ensure we deliver exceptional service.</p>
-
-        <div class="team-grid">
-            <!-- Team Member 1 -->
-            <div class="team-card" data-aos="fade-up">
-                <div class="team-image">
-                    <img src="${pageContext.request.contextPath}/assets/images/M2.jpg" alt="Nikesh">
-                </div>
-                <div class="team-info">
-                    <h3 class="team-name">Nikesh Shah</h3>
-                    <p class="team-position">Team Leader</p>
-                    <p class="team-id">23056688</p>
-                    <p class="team-bio">Leads our team with expertise in fleet management and customer service excellence.</p>
-                    <div class="team-social">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Team Member 2 -->
-            <div class="team-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="team-image">
-                    <img src="${pageContext.request.contextPath}/assets/images/sudish.jpg" alt="Sudish">
-                </div>
-                <div class="team-info">
-                    <h3 class="team-name">Sudish karki</h3>
-                    <p class="team-position">Member</p>
-                    <p class="team-id">23056773</p>
-                    <p class="team-bio">Specializes in vehicle maintenance and ensuring our fleet meets quality standards.</p>
-                    <div class="team-social">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Team Member 3 -->
-            <div class="team-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="team-image">
-                    <img src="${pageContext.request.contextPath}/assets/images/rejina.jpg" alt="Rejina">
-                </div>
-                <div class="team-info">
-                    <h3 class="team-name">Rejina Dangal</h3>
-                    <p class="team-position">Member</p>
-                    <p class="team-id">23056714</p>
-                    <p class="team-bio">Manages customer relations and ensures exceptional service delivery.</p>
-                    <div class="team-social">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Team Member 4 -->
-            <div class="team-card" data-aos="fade-up" data-aos-delay="300">
-                <div class="team-image">
-                    <img src="${pageContext.request.contextPath}/assets/images/soohang.jpg" alt="Soohang">
-                </div>
-                <div class="team-info">
-                    <h3 class="team-name">Soohang Lingkhim Limbu</h3>
-                    <p class="team-position">Member</p>
-                    <p class="team-id">23056769</p>
-                    <p class="team-bio">Handles booking operations and fleet logistics for smooth service delivery.</p>
-                    <div class="team-social">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Team Member 5 -->
-            <div class="team-card" data-aos="fade-up" data-aos-delay="400">
-                <div class="team-image">
-                    <img src="${pageContext.request.contextPath}/assets/images/vasu.jpg" alt="BashuDev">
-                </div>
-                <div class="team-info">
-                    <h3 class="team-name">BashuDev Baidya</h3>
-                    <p class="team-position">Member</p>
-                    <p class="team-id">23056635</p>
-                    <p class="team-bio">Focuses on technology integration and digital solutions for our services.</p>
-                    <div class="team-social">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Achievement Section -->
     <section class="achievement-section">
         <h1 class="section-title">Our Achievement</h1>

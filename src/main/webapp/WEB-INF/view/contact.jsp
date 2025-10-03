@@ -27,9 +27,7 @@
                 <i class="fas fa-map-marker-alt"></i>
             </div>
             <h3>Our Location</h3>
-            <p>123 Main Street, Downtown</p>
-            <p>Bhanuchowk, Dharan, Sunsari</p>
-            <p>Dulari Sadak, Dulari, Sunsari</p>
+            <p>123 Main Street, Sri Lanka</p>
         </div>
 
         <div class="card slide-in-up">

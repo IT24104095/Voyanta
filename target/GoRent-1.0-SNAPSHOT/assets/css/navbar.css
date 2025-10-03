@@ -1,0 +1,844 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Base Styles */
+:root {
+    --primary-color: #3b82f6;
+    --primary-dark: #2563eb;
+    --secondary-color: #1e293b;
+    --text-color: #334155;
+    --light-color: #f8fafc;
+    --hover-color: #dbeafe;
+    --transition-speed: 0.3s;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Navbar Base */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--light-color);
+    box-shadow: var(--shadow);
+    z-index: 1000;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+/* Entrance animation */
+.navbar.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Logo Styles */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.3rem;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.logo i {
+    font-size: 1.3rem;
+    margin-right: 0.5rem;
+    color: var(--primary-color);
+}
+
+.logo-text {
+    background: linear-gradient(45deg, var(--primary-color), var(--primary-dark));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.logo:hover .logo-text {
+    text-shadow: 0 0 8px rgba(59, 130, 246, 0.3);
+}
+
+/* Navigation Menu */
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0.5rem 1.2rem;
+    font-weight: 400;
+    font-size: 0.95rem;
+    position: relative;
+    transition: color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    display: block;
+}
+
+.nav-link span {
+    position: relative;
+    z-index: 1;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform: translateX(-50%);
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 70%;
+}
+
+.nav-link.active {
+    color: var(--primary-color);
+}
+
+/* Auth Buttons */
+.auth-buttons {
+    display: flex;
+    margin-left: 2rem;
+}
+
+.login-btn, .register-btn {
+    padding: 0.5rem 1.3rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 0.9rem;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.login-btn {
+    color: var(--primary-color);
+    margin-right: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.login-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(219, 234, 254, 0.3);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: -1;
+}
+
+.login-btn:hover::before {
+    left: 0;
+}
+
+.login-btn:hover {
+    color: var(--primary-dark);
+}
+
+.register-btn {
+    background-color: var(--secondary-color);
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.register-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--primary-color);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: -1;
+}
+
+.register-btn:hover::before {
+    width: 100%;
+}
+
+.register-btn:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Scroll Effect */
+.navbar.scrolled {
+    background-color: rgba(248, 250, 252, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 0.4rem 0;
+}
+
+/* Menu Toggle (Mobile) */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    color: var(--text-color);
+    transition: color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    padding: 0.5rem;
+}
+
+.menu-toggle:hover {
+    color: var(--primary-color);
+}
+
+/* Hamburger Menu */
+.hamburger {
+    width: 24px;
+    height: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--text-color);
+    border-radius: 2px;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Profile Section */
+.profile-section {
+    display: flex;
+    align-items: center;
+}
+
+.booking-btn {
+    margin-right: 1rem;
+    padding: 0.5rem 1.1rem;
+    background-color: transparent;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 400;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.booking-btn:hover {
+    background-color: var(--hover-color);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.booking-btn i {
+    margin-right: 0.5rem;
+    font-size: 0.85rem;
+}
+
+
+.profile-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #f0f2f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    left: 20px;
+}
+
+.profile-icon i {
+    color: #4b5563;
+    font-size: 1.1rem;
+}
+
+.profile-icon:hover {
+    background-color: #e4e6eb;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 46px;
+    right: 0;
+    width: 200px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 8px 0;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.dropdown-menu.active {
+    position: absolute;
+    /*left: 10%;*/
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu a {
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    color: #4b5563;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.dropdown-icon {
+    margin-right: 12px;
+    font-size: 14px;
+    color: #6b7280;
+    width: 16px;
+    text-align: center;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f9fafb;
+}
+
+/* Booking Modal */
+.booking-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    animation: fadeIn 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.booking-modal-content {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    margin: 0 1rem;
+    position: relative;
+    overflow: hidden;
+    animation: slideUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.booking-modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #64748b;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.booking-modal-close:hover {
+    color: #334155;
+}
+
+.booking-modal-header {
+    padding: 1.5rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.booking-modal-header h2 {
+    margin: 0 0 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.booking-steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #64748b;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.step.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.step-line {
+    height: 2px;
+    background-color: #e2e8f0;
+    flex-grow: 1;
+    margin: 0 0.5rem;
+}
+
+.booking-form {
+    padding: 1.5rem;
+}
+
+.booking-step-content {
+    display: none;
+}
+
+.booking-step-content.active-step {
+    display: block;
+    animation: fadeIn 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.booking-step-content h3 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #334155;
+}
+
+.date-pickers,
+.time-pickers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.date-field,
+.time-field,
+.location-field,
+.car-field {
+    margin-bottom: 1.5rem;
+}
+
+.date-field label,
+.time-field label,
+.location-field label,
+.car-field label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #475569;
+}
+
+.date-input-wrapper,
+.time-input-wrapper,
+.location-input-wrapper,
+.car-input-wrapper {
+    position: relative;
+}
+
+.date-input-wrapper i,
+.time-input-wrapper i,
+.location-input-wrapper i,
+.car-input-wrapper i {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #64748b;
+    font-size: 0.875rem;
+}
+
+.date-input,
+.time-input,
+.location-input,
+.car-input {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 2.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.875rem;
+    color: #334155;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.date-input:focus,
+.time-input:focus,
+.location-input:focus,
+.car-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.next-button,
+.back-button,
+.confirm-button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.next-button,
+.confirm-button {
+    background-color: var(--primary-color);
+    color: white;
+    box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
+}
+
+.next-button:hover,
+.confirm-button:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
+}
+
+.back-button {
+    background-color: white;
+    color: #64748b;
+    border: 1px solid #e2e8f0;
+}
+
+.back-button:hover {
+    background-color: #f8fafc;
+    color: #334155;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.booking-summary {
+    background-color: #f8fafc;
+    border-radius: 6px;
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+}
+
+.summary-label {
+    color: #64748b;
+    font-weight: 500;
+}
+
+.summary-value {
+    color: #334155;
+    font-weight: 400;
+}
+
+.estimated-price {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e2e8f0;
+}
+
+.price-label {
+    color: #334155;
+    font-weight: 600;
+}
+
+.price-value {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+
+.btn-log{
+    margin-left: 30px;
+
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Helper Classes */
+.mr-2 {
+    margin-right: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 60px;
+        right: -100%;
+        flex-direction: column;
+        background-color: white;
+        width: 80%;
+        max-width: 300px;
+        height: calc(100vh - 60px);
+        padding: 2rem;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        transition: right 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        align-items: flex-start;
+        overflow-y: auto;
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 0.8rem 0;
+        width: 100%;
+    }
+
+    .nav-link {
+        padding: 0.8rem 0;
+        width: 100%;
+        display: block;
+    }
+
+    .nav-link::after {
+        bottom: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+        width: 30%;
+    }
+
+    .auth-buttons {
+        position: relative;
+        margin: 1.5rem 0 0 0;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .login-btn, .register-btn {
+        text-align: center;
+        padding: 0.8rem 0;
+        width: 100%;
+    }
+
+    .login-btn {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .profile-section {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .booking-btn {
+        margin-bottom: 1rem;
+        margin-right: 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .date-pickers,
+    .time-pickers {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-modal-content {
+        max-width: 90%;
+        margin: 0 1rem;
+    }
+    .dropdown-menu.active {
+        left: 10%;
+    }
+}
+
+/* Animation for menu toggle */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.nav-menu.active .nav-links li {
+    animation: fadeIn 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    opacity: 0;
+}
+
+.nav-menu.active .nav-links li:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.nav-menu.active .nav-links li:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.nav-menu.active .nav-links li:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.nav-menu.active .auth-buttons {
+    animation: fadeIn 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    animation-delay: 0.4s;
+    opacity: 0;
+}
+
+
+@media (hover: none) and (pointer: coarse) {
+    .dropdown-menu a {
+        padding: 14px 16px;
+    }
+
+    .profile-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .date-input,
+    .time-input,
+    .location-input,
+    .car-input {
+        padding: 0.875rem 1rem 0.875rem 2.5rem;
+    }
+
+    .next-button,
+    .back-button,
+    .confirm-button {
+        padding: 0.875rem 1.75rem;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .dropdown-menu {
+        width: 160px;
+        right: -20px;
+    }
+
+    .dropdown-menu a {
+        padding: 8px 12px;
+    }
+
+    .booking-modal-content {
+        max-width: 95%;
+        margin: 0 0.5rem;
+    }
+    .dropdown-menu.active {
+        left: 10%;
+    }
+
+    }

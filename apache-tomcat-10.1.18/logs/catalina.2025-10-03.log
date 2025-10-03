@@ -1,0 +1,142 @@
+03-Oct-2025 18:19:04.995 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.18
+03-Oct-2025 18:19:05.003 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 5 2024 14:39:40 UTC
+03-Oct-2025 18:19:05.005 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.18.0
+03-Oct-2025 18:19:05.005 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+03-Oct-2025 18:19:05.005 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.8.0-1030-azure
+03-Oct-2025 18:19:05.006 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+03-Oct-2025 18:19:05.006 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /opt/java/11.0.14
+03-Oct-2025 18:19:05.006 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.14.1+1-LTS
+03-Oct-2025 18:19:05.006 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Microsoft
+03-Oct-2025 18:19:05.007 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /workspaces/Voyanta/apache-tomcat-10.1.18
+03-Oct-2025 18:19:05.009 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /workspaces/Voyanta/apache-tomcat-10.1.18
+03-Oct-2025 18:19:05.070 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/workspaces/Voyanta/apache-tomcat-10.1.18/conf/logging.properties
+03-Oct-2025 18:19:05.070 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+03-Oct-2025 18:19:05.071 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+03-Oct-2025 18:19:05.073 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+03-Oct-2025 18:19:05.073 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+03-Oct-2025 18:19:05.073 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+03-Oct-2025 18:19:05.073 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+03-Oct-2025 18:19:05.074 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+03-Oct-2025 18:19:05.074 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+03-Oct-2025 18:19:05.074 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+03-Oct-2025 18:19:05.074 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/workspaces/Voyanta/apache-tomcat-10.1.18
+03-Oct-2025 18:19:05.074 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/workspaces/Voyanta/apache-tomcat-10.1.18
+03-Oct-2025 18:19:05.074 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/workspaces/Voyanta/apache-tomcat-10.1.18/temp
+03-Oct-2025 18:19:05.089 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+03-Oct-2025 18:19:05.637 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+03-Oct-2025 18:19:05.686 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1070] milliseconds
+03-Oct-2025 18:19:05.790 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+03-Oct-2025 18:19:05.791 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.18]
+03-Oct-2025 18:19:05.835 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/workspaces/Voyanta/apache-tomcat-10.1.18/webapps/GoRent.war]
+03-Oct-2025 18:19:08.125 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+03-Oct-2025 18:19:08.362 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal One or more Filters failed to start. Full details will be found in the appropriate container log file
+03-Oct-2025 18:19:08.364 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal Context [/GoRent] startup failed due to previous errors
+03-Oct-2025 18:19:08.395 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/workspaces/Voyanta/apache-tomcat-10.1.18/webapps/GoRent.war] has finished in [2,557] ms
+03-Oct-2025 18:19:08.395 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/Voyanta/apache-tomcat-10.1.18/webapps/ROOT]
+03-Oct-2025 18:19:08.435 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Voyanta/apache-tomcat-10.1.18/webapps/ROOT] has finished in [40] ms
+03-Oct-2025 18:19:08.436 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/Voyanta/apache-tomcat-10.1.18/webapps/docs]
+03-Oct-2025 18:19:08.472 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Voyanta/apache-tomcat-10.1.18/webapps/docs] has finished in [37] ms
+03-Oct-2025 18:19:08.472 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/Voyanta/apache-tomcat-10.1.18/webapps/examples]
+03-Oct-2025 18:19:08.709 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Voyanta/apache-tomcat-10.1.18/webapps/examples] has finished in [237] ms
+03-Oct-2025 18:19:08.710 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/Voyanta/apache-tomcat-10.1.18/webapps/host-manager]
+03-Oct-2025 18:19:08.747 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Voyanta/apache-tomcat-10.1.18/webapps/host-manager] has finished in [36] ms
+03-Oct-2025 18:19:08.747 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/Voyanta/apache-tomcat-10.1.18/webapps/manager]
+03-Oct-2025 18:19:08.766 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Voyanta/apache-tomcat-10.1.18/webapps/manager] has finished in [19] ms
+03-Oct-2025 18:19:08.771 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+03-Oct-2025 18:19:08.789 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [3099] milliseconds
+03-Oct-2025 18:19:17.003 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+03-Oct-2025 18:19:17.013 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+03-Oct-2025 18:19:17.072 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+03-Oct-2025 18:19:17.092 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+03-Oct-2025 18:21:12.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.18
+03-Oct-2025 18:21:12.487 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 5 2024 14:39:40 UTC
+03-Oct-2025 18:21:12.487 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.18.0
+03-Oct-2025 18:21:12.487 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+03-Oct-2025 18:21:12.487 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.8.0-1030-azure
+03-Oct-2025 18:21:12.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+03-Oct-2025 18:21:12.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-21-openjdk-amd64
+03-Oct-2025 18:21:12.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.8+9-Ubuntu-0ubuntu124.04.1
+03-Oct-2025 18:21:12.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+03-Oct-2025 18:21:12.491 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /workspaces/Voyanta/apache-tomcat-10.1.18
+03-Oct-2025 18:21:12.491 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /workspaces/Voyanta/apache-tomcat-10.1.18
+03-Oct-2025 18:21:12.523 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/workspaces/Voyanta/apache-tomcat-10.1.18/conf/logging.properties
+03-Oct-2025 18:21:12.523 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+03-Oct-2025 18:21:12.523 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+03-Oct-2025 18:21:12.523 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+03-Oct-2025 18:21:12.524 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+03-Oct-2025 18:21:12.525 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+03-Oct-2025 18:21:12.525 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+03-Oct-2025 18:21:12.525 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+03-Oct-2025 18:21:12.525 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+03-Oct-2025 18:21:12.525 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+03-Oct-2025 18:21:12.525 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/workspaces/Voyanta/apache-tomcat-10.1.18
+03-Oct-2025 18:21:12.525 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/workspaces/Voyanta/apache-tomcat-10.1.18
+03-Oct-2025 18:21:12.526 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/workspaces/Voyanta/apache-tomcat-10.1.18/temp
+03-Oct-2025 18:21:12.529 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+03-Oct-2025 18:21:13.112 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+03-Oct-2025 18:21:13.202 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [997] milliseconds
+03-Oct-2025 18:21:13.281 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+03-Oct-2025 18:21:13.282 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.18]
+03-Oct-2025 18:21:13.345 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/workspaces/Voyanta/apache-tomcat-10.1.18/webapps/GoRent.war]
+03-Oct-2025 18:21:15.052 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+03-Oct-2025 18:21:15.260 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/workspaces/Voyanta/apache-tomcat-10.1.18/webapps/GoRent.war] has finished in [1,915] ms
+03-Oct-2025 18:21:15.261 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/Voyanta/apache-tomcat-10.1.18/webapps/ROOT]
+03-Oct-2025 18:21:15.316 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Voyanta/apache-tomcat-10.1.18/webapps/ROOT] has finished in [55] ms
+03-Oct-2025 18:21:15.318 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/Voyanta/apache-tomcat-10.1.18/webapps/docs]
+03-Oct-2025 18:21:15.374 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Voyanta/apache-tomcat-10.1.18/webapps/docs] has finished in [56] ms
+03-Oct-2025 18:21:15.375 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/Voyanta/apache-tomcat-10.1.18/webapps/examples]
+03-Oct-2025 18:21:15.789 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Voyanta/apache-tomcat-10.1.18/webapps/examples] has finished in [413] ms
+03-Oct-2025 18:21:15.789 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/Voyanta/apache-tomcat-10.1.18/webapps/host-manager]
+03-Oct-2025 18:21:15.815 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Voyanta/apache-tomcat-10.1.18/webapps/host-manager] has finished in [26] ms
+03-Oct-2025 18:21:15.816 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/Voyanta/apache-tomcat-10.1.18/webapps/manager]
+03-Oct-2025 18:21:15.843 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Voyanta/apache-tomcat-10.1.18/webapps/manager] has finished in [27] ms
+03-Oct-2025 18:21:15.846 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+03-Oct-2025 18:21:15.860 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2655] milliseconds
+03-Oct-2025 18:21:32.422 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+03-Oct-2025 18:21:32.433 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+03-Oct-2025 18:21:32.505 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+03-Oct-2025 18:21:32.525 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+03-Oct-2025 18:24:53.237 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.18
+03-Oct-2025 18:24:53.250 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 5 2024 14:39:40 UTC
+03-Oct-2025 18:24:53.251 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.18.0
+03-Oct-2025 18:24:53.251 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+03-Oct-2025 18:24:53.252 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.8.0-1030-azure
+03-Oct-2025 18:24:53.252 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+03-Oct-2025 18:24:53.252 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-21-openjdk-amd64
+03-Oct-2025 18:24:53.252 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.8+9-Ubuntu-0ubuntu124.04.1
+03-Oct-2025 18:24:53.252 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+03-Oct-2025 18:24:53.252 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /workspaces/Voyanta/apache-tomcat-10.1.18
+03-Oct-2025 18:24:53.254 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /workspaces/Voyanta/apache-tomcat-10.1.18
+03-Oct-2025 18:24:53.289 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/workspaces/Voyanta/apache-tomcat-10.1.18/conf/logging.properties
+03-Oct-2025 18:24:53.289 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+03-Oct-2025 18:24:53.289 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+03-Oct-2025 18:24:53.290 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+03-Oct-2025 18:24:53.290 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+03-Oct-2025 18:24:53.290 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+03-Oct-2025 18:24:53.290 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+03-Oct-2025 18:24:53.291 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+03-Oct-2025 18:24:53.291 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+03-Oct-2025 18:24:53.291 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+03-Oct-2025 18:24:53.292 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/workspaces/Voyanta/apache-tomcat-10.1.18
+03-Oct-2025 18:24:53.293 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/workspaces/Voyanta/apache-tomcat-10.1.18
+03-Oct-2025 18:24:53.293 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/workspaces/Voyanta/apache-tomcat-10.1.18/temp
+03-Oct-2025 18:24:53.297 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+03-Oct-2025 18:24:53.889 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+03-Oct-2025 18:24:53.932 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [957] milliseconds
+03-Oct-2025 18:24:54.004 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+03-Oct-2025 18:24:54.006 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.18]
+03-Oct-2025 18:24:54.054 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/workspaces/Voyanta/apache-tomcat-10.1.18/webapps/GoRent.war]
+03-Oct-2025 18:24:55.714 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+03-Oct-2025 18:24:55.941 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/workspaces/Voyanta/apache-tomcat-10.1.18/webapps/GoRent.war] has finished in [1,883] ms
+03-Oct-2025 18:24:55.942 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/Voyanta/apache-tomcat-10.1.18/webapps/ROOT]
+03-Oct-2025 18:24:55.976 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Voyanta/apache-tomcat-10.1.18/webapps/ROOT] has finished in [33] ms
+03-Oct-2025 18:24:55.978 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/Voyanta/apache-tomcat-10.1.18/webapps/docs]
+03-Oct-2025 18:24:56.015 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Voyanta/apache-tomcat-10.1.18/webapps/docs] has finished in [37] ms
+03-Oct-2025 18:24:56.017 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/Voyanta/apache-tomcat-10.1.18/webapps/examples]
+03-Oct-2025 18:24:56.533 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Voyanta/apache-tomcat-10.1.18/webapps/examples] has finished in [516] ms
+03-Oct-2025 18:24:56.534 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/Voyanta/apache-tomcat-10.1.18/webapps/host-manager]
+03-Oct-2025 18:24:56.579 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Voyanta/apache-tomcat-10.1.18/webapps/host-manager] has finished in [45] ms
+03-Oct-2025 18:24:56.580 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/Voyanta/apache-tomcat-10.1.18/webapps/manager]
+03-Oct-2025 18:24:56.626 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/Voyanta/apache-tomcat-10.1.18/webapps/manager] has finished in [46] ms
+03-Oct-2025 18:24:56.634 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+03-Oct-2025 18:24:56.667 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2733] milliseconds

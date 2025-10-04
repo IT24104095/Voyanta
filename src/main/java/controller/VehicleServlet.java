@@ -31,7 +31,7 @@ public class VehicleServlet extends HttpServlet {
             List<Vehicle> vehicles;
 
             if (query != null && !query.trim().isEmpty()) {
-                // If search query is provided, search for matching vehicles
+                // If a search query is provided, search for matching vehicles
                 System.out.println("[DEBUG] Searching vehicles with query: " + query);
                 vehicles = vehicleService.searchVehicles(query);
             } else {
